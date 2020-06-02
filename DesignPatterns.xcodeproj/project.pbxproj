@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5801C06A248615F100DEE48D /* VIPERProfiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5801C069248615F100DEE48D /* VIPERProfiles.storyboard */; };
+		5801C06C248615FE00DEE48D /* VIPERProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C06B248615FE00DEE48D /* VIPERProfilesViewController.swift */; };
+		5801C06E2486171200DEE48D /* ViperProfilesViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C06D2486171200DEE48D /* ViperProfilesViewIO.swift */; };
+		5801C071248617A700DEE48D /* UserDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C070248617A700DEE48D /* UserDisplayItem.swift */; };
+		5801C075248618C700DEE48D /* VIPERProfilesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C074248618C700DEE48D /* VIPERProfilesPresenter.swift */; };
+		5801C07824861AC300DEE48D /* VIPERProfilesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C07724861AC300DEE48D /* VIPERProfilesRouter.swift */; };
+		5801C07B24861BC700DEE48D /* VIPERProfilesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C07A24861BC700DEE48D /* VIPERProfilesAssembly.swift */; };
+		5801C07D24861DFE00DEE48D /* VIPEREditProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C07C24861DFE00DEE48D /* VIPEREditProfileAssembly.swift */; };
+		5801C08224861E2300DEE48D /* VIPEREditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5801C08124861E2300DEE48D /* VIPEREditProfile.storyboard */; };
+		5801C08424861F7F00DEE48D /* VIPEREditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C08324861F7F00DEE48D /* VIPEREditProfileViewController.swift */; };
+		5801C086248620BF00DEE48D /* VIPEREditProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C085248620BF00DEE48D /* VIPEREditProfilePresenter.swift */; };
+		5801C0882486213100DEE48D /* VIPEREditProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0872486213100DEE48D /* VIPEREditProfileRouter.swift */; };
+		5801C08A2486239F00DEE48D /* VIPERPostsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0892486239F00DEE48D /* VIPERPostsAssembly.swift */; };
+		5801C08E248623D900DEE48D /* VIPERPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C08D248623D900DEE48D /* VIPERPostsViewController.swift */; };
+		5801C0902486248500DEE48D /* VIPERPosts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5801C08F2486248500DEE48D /* VIPERPosts.storyboard */; };
+		5801C0922486272000DEE48D /* PostDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0912486272000DEE48D /* PostDisplayItem.swift */; };
+		5801C0942486294500DEE48D /* VIPERPostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0932486294500DEE48D /* VIPERPostsPresenter.swift */; };
+		5801C0992486347D00DEE48D /* MVCProfiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5801C0972486347D00DEE48D /* MVCProfiles.storyboard */; };
+		5801C09A2486347D00DEE48D /* MVCProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0982486347D00DEE48D /* MVCProfilesViewController.swift */; };
+		5801C09C2486368400DEE48D /* MVCProfilesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C09B2486368400DEE48D /* MVCProfilesAssembly.swift */; };
+		5801C09F248637C000DEE48D /* MVCEditProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C09E248637C000DEE48D /* MVCEditProfileAssembly.swift */; };
+		5801C0A22486381100DEE48D /* MVCEditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5801C0A02486381100DEE48D /* MVCEditProfile.storyboard */; };
+		5801C0A32486381100DEE48D /* MVCEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0A12486381100DEE48D /* MVCEditProfileViewController.swift */; };
+		5801C0A6248639AB00DEE48D /* MVCPostsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0A5248639AB00DEE48D /* MVCPostsAssembly.swift */; };
+		5801C0A9248639FE00DEE48D /* MVCPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0A7248639FE00DEE48D /* MVCPostsViewController.swift */; };
+		5801C0AA248639FE00DEE48D /* MVCPosts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5801C0A8248639FE00DEE48D /* MVCPosts.storyboard */; };
+		5801C0AF24863CEC00DEE48D /* MVVMProfiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5801C0AD24863CEC00DEE48D /* MVVMProfiles.storyboard */; };
+		5801C0B024863CEC00DEE48D /* MVVMProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0AE24863CEC00DEE48D /* MVVMProfilesViewController.swift */; };
+		5801C0B324863DAB00DEE48D /* MVVMProfilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0B224863DAB00DEE48D /* MVVMProfilesViewModel.swift */; };
+		5801C0B52486441700DEE48D /* MVVMProfilesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0B42486441600DEE48D /* MVVMProfilesAssembly.swift */; };
+		5801C0BB248645B200DEE48D /* MVVMEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0B9248645B200DEE48D /* MVVMEditProfileViewController.swift */; };
+		5801C0BC248645B200DEE48D /* MVVMEditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5801C0BA248645B200DEE48D /* MVVMEditProfile.storyboard */; };
+		5801C0BE248645E300DEE48D /* MVVMEditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0BD248645E300DEE48D /* MVVMEditProfileViewModel.swift */; };
+		5801C0C2248647FD00DEE48D /* MVVMEditProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0C1248647FD00DEE48D /* MVVMEditProfileRouter.swift */; };
+		5801C0C42486490D00DEE48D /* MVVMEditProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0C32486490D00DEE48D /* MVVMEditProfileAssembly.swift */; };
+		5801C0CB248649E800DEE48D /* MVVMPostsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0CA248649E800DEE48D /* MVVMPostsAssembly.swift */; };
+		5801C0CE24864A1400DEE48D /* MVVMPosts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5801C0CC24864A1400DEE48D /* MVVMPosts.storyboard */; };
+		5801C0CF24864A1400DEE48D /* MVVMPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0CD24864A1400DEE48D /* MVVMPostsViewController.swift */; };
+		5801C0D124864C3000DEE48D /* MVVMPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0D024864C3000DEE48D /* MVVMPostsViewModel.swift */; };
+		5801C0D32486502000DEE48D /* MVVMProfilesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5801C0D22486502000DEE48D /* MVVMProfilesRouter.swift */; };
+		5891D28424868AD500BBBA47 /* VIPEREditProfileV2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5891D28324868AD500BBBA47 /* VIPEREditProfileV2.storyboard */; };
+		5891D28624868B8500BBBA47 /* VIPEREditProfile2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891D28524868B8500BBBA47 /* VIPEREditProfile2ViewController.swift */; };
+		58A2CDA52480DFC300C28B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2CDA42480DFC300C28B23 /* AppDelegate.swift */; };
+		58A2CDA92480DFC300C28B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2CDA82480DFC300C28B23 /* ViewController.swift */; };
+		58A2CDAC2480DFC300C28B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A2CDAA2480DFC300C28B23 /* Main.storyboard */; };
+		58A2CDAE2480DFC400C28B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A2CDAD2480DFC400C28B23 /* Assets.xcassets */; };
+		58A2CDB12480DFC400C28B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A2CDAF2480DFC400C28B23 /* LaunchScreen.storyboard */; };
+		58A2CDC02480E83800C28B23 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2CDBF2480E83800C28B23 /* PostEntity.swift */; };
+		58A2CDC22480E89700C28B23 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2CDC12480E89700C28B23 /* UserEntity.swift */; };
+		58A2CDC52480E98B00C28B23 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2CDC42480E98B00C28B23 /* UserService.swift */; };
+		58A2CDC72480E9EB00C28B23 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2CDC62480E9EB00C28B23 /* PostService.swift */; };
+		58A2CDC92480EB9A00C28B23 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2CDC82480EB9A00C28B23 /* StorageService.swift */; };
+		58A2CDCB2480FBA900C28B23 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2CDCA2480FBA900C28B23 /* ServiceLocator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5801C069248615F100DEE48D /* VIPERProfiles.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VIPERProfiles.storyboard; sourceTree = "<group>"; };
+		5801C06B248615FE00DEE48D /* VIPERProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERProfilesViewController.swift; sourceTree = "<group>"; };
+		5801C06D2486171200DEE48D /* ViperProfilesViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperProfilesViewIO.swift; sourceTree = "<group>"; };
+		5801C070248617A700DEE48D /* UserDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDisplayItem.swift; sourceTree = "<group>"; };
+		5801C074248618C700DEE48D /* VIPERProfilesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERProfilesPresenter.swift; sourceTree = "<group>"; };
+		5801C07724861AC300DEE48D /* VIPERProfilesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERProfilesRouter.swift; sourceTree = "<group>"; };
+		5801C07A24861BC700DEE48D /* VIPERProfilesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERProfilesAssembly.swift; sourceTree = "<group>"; };
+		5801C07C24861DFE00DEE48D /* VIPEREditProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPEREditProfileAssembly.swift; sourceTree = "<group>"; };
+		5801C08124861E2300DEE48D /* VIPEREditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VIPEREditProfile.storyboard; sourceTree = "<group>"; };
+		5801C08324861F7F00DEE48D /* VIPEREditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPEREditProfileViewController.swift; sourceTree = "<group>"; };
+		5801C085248620BF00DEE48D /* VIPEREditProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPEREditProfilePresenter.swift; sourceTree = "<group>"; };
+		5801C0872486213100DEE48D /* VIPEREditProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPEREditProfileRouter.swift; sourceTree = "<group>"; };
+		5801C0892486239F00DEE48D /* VIPERPostsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERPostsAssembly.swift; sourceTree = "<group>"; };
+		5801C08D248623D900DEE48D /* VIPERPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERPostsViewController.swift; sourceTree = "<group>"; };
+		5801C08F2486248500DEE48D /* VIPERPosts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VIPERPosts.storyboard; sourceTree = "<group>"; };
+		5801C0912486272000DEE48D /* PostDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDisplayItem.swift; sourceTree = "<group>"; };
+		5801C0932486294500DEE48D /* VIPERPostsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERPostsPresenter.swift; sourceTree = "<group>"; };
+		5801C0972486347D00DEE48D /* MVCProfiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVCProfiles.storyboard; sourceTree = "<group>"; };
+		5801C0982486347D00DEE48D /* MVCProfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCProfilesViewController.swift; sourceTree = "<group>"; };
+		5801C09B2486368400DEE48D /* MVCProfilesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCProfilesAssembly.swift; sourceTree = "<group>"; };
+		5801C09E248637C000DEE48D /* MVCEditProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCEditProfileAssembly.swift; sourceTree = "<group>"; };
+		5801C0A02486381100DEE48D /* MVCEditProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVCEditProfile.storyboard; sourceTree = "<group>"; };
+		5801C0A12486381100DEE48D /* MVCEditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCEditProfileViewController.swift; sourceTree = "<group>"; };
+		5801C0A5248639AB00DEE48D /* MVCPostsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCPostsAssembly.swift; sourceTree = "<group>"; };
+		5801C0A7248639FE00DEE48D /* MVCPostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVCPostsViewController.swift; sourceTree = "<group>"; };
+		5801C0A8248639FE00DEE48D /* MVCPosts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVCPosts.storyboard; sourceTree = "<group>"; };
+		5801C0AD24863CEC00DEE48D /* MVVMProfiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVVMProfiles.storyboard; sourceTree = "<group>"; };
+		5801C0AE24863CEC00DEE48D /* MVVMProfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMProfilesViewController.swift; sourceTree = "<group>"; };
+		5801C0B224863DAB00DEE48D /* MVVMProfilesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMProfilesViewModel.swift; sourceTree = "<group>"; };
+		5801C0B42486441600DEE48D /* MVVMProfilesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMProfilesAssembly.swift; sourceTree = "<group>"; };
+		5801C0B9248645B200DEE48D /* MVVMEditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMEditProfileViewController.swift; sourceTree = "<group>"; };
+		5801C0BA248645B200DEE48D /* MVVMEditProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVVMEditProfile.storyboard; sourceTree = "<group>"; };
+		5801C0BD248645E300DEE48D /* MVVMEditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMEditProfileViewModel.swift; sourceTree = "<group>"; };
+		5801C0C1248647FD00DEE48D /* MVVMEditProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMEditProfileRouter.swift; sourceTree = "<group>"; };
+		5801C0C32486490D00DEE48D /* MVVMEditProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMEditProfileAssembly.swift; sourceTree = "<group>"; };
+		5801C0CA248649E800DEE48D /* MVVMPostsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMPostsAssembly.swift; sourceTree = "<group>"; };
+		5801C0CC24864A1400DEE48D /* MVVMPosts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MVVMPosts.storyboard; sourceTree = "<group>"; };
+		5801C0CD24864A1400DEE48D /* MVVMPostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMPostsViewController.swift; sourceTree = "<group>"; };
+		5801C0D024864C3000DEE48D /* MVVMPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMPostsViewModel.swift; sourceTree = "<group>"; };
+		5801C0D22486502000DEE48D /* MVVMProfilesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMProfilesRouter.swift; sourceTree = "<group>"; };
+		5891D28324868AD500BBBA47 /* VIPEREditProfileV2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VIPEREditProfileV2.storyboard; sourceTree = "<group>"; };
+		5891D28524868B8500BBBA47 /* VIPEREditProfile2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPEREditProfile2ViewController.swift; sourceTree = "<group>"; };
+		58A2CDA12480DFC300C28B23 /* DesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A2CDA42480DFC300C28B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58A2CDA82480DFC300C28B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58A2CDAB2480DFC300C28B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58A2CDAD2480DFC400C28B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58A2CDB02480DFC400C28B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58A2CDB22480DFC400C28B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A2CDBF2480E83800C28B23 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		58A2CDC12480E89700C28B23 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		58A2CDC42480E98B00C28B23 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		58A2CDC62480E9EB00C28B23 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		58A2CDC82480EB9A00C28B23 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		58A2CDCA2480FBA900C28B23 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58A2CD9E2480DFC300C28B23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5801C0652486159700DEE48D /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				5801C07A24861BC700DEE48D /* VIPERProfilesAssembly.swift */,
+				5801C07624861AB700DEE48D /* Router */,
+				5801C073248618B200DEE48D /* Presenter */,
+				5801C072248618AD00DEE48D /* View */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		5801C066248615BD00DEE48D /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5801C07C24861DFE00DEE48D /* VIPEREditProfileAssembly.swift */,
+				5801C08024861E1100DEE48D /* Router */,
+				5801C07F24861E0900DEE48D /* Presenter */,
+				5801C07E24861E0200DEE48D /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		5801C067248615C700DEE48D /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0892486239F00DEE48D /* VIPERPostsAssembly.swift */,
+				5801C08C248623A900DEE48D /* Presenter */,
+				5801C08B248623A400DEE48D /* View */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		5801C06F2486179C00DEE48D /* DisplayItems */ = {
+			isa = PBXGroup;
+			children = (
+				5801C070248617A700DEE48D /* UserDisplayItem.swift */,
+				5801C0912486272000DEE48D /* PostDisplayItem.swift */,
+			);
+			path = DisplayItems;
+			sourceTree = "<group>";
+		};
+		5801C072248618AD00DEE48D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5801C069248615F100DEE48D /* VIPERProfiles.storyboard */,
+				5801C06B248615FE00DEE48D /* VIPERProfilesViewController.swift */,
+				5801C06D2486171200DEE48D /* ViperProfilesViewIO.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5801C073248618B200DEE48D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5801C074248618C700DEE48D /* VIPERProfilesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5801C07624861AB700DEE48D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5801C07724861AC300DEE48D /* VIPERProfilesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5801C07E24861E0200DEE48D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5801C08124861E2300DEE48D /* VIPEREditProfile.storyboard */,
+				5801C08324861F7F00DEE48D /* VIPEREditProfileViewController.swift */,
+				5891D28324868AD500BBBA47 /* VIPEREditProfileV2.storyboard */,
+				5891D28524868B8500BBBA47 /* VIPEREditProfile2ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5801C07F24861E0900DEE48D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5801C085248620BF00DEE48D /* VIPEREditProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5801C08024861E1100DEE48D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0872486213100DEE48D /* VIPEREditProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5801C08B248623A400DEE48D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5801C08D248623D900DEE48D /* VIPERPostsViewController.swift */,
+				5801C08F2486248500DEE48D /* VIPERPosts.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5801C08C248623A900DEE48D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0932486294500DEE48D /* VIPERPostsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5801C0952486344500DEE48D /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				5801C09B2486368400DEE48D /* MVCProfilesAssembly.swift */,
+				5801C0972486347D00DEE48D /* MVCProfiles.storyboard */,
+				5801C0982486347D00DEE48D /* MVCProfilesViewController.swift */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		5801C09D248637AF00DEE48D /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0A02486381100DEE48D /* MVCEditProfile.storyboard */,
+				5801C0A12486381100DEE48D /* MVCEditProfileViewController.swift */,
+				5801C09E248637C000DEE48D /* MVCEditProfileAssembly.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		5801C0A42486397900DEE48D /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0A8248639FE00DEE48D /* MVCPosts.storyboard */,
+				5801C0A7248639FE00DEE48D /* MVCPostsViewController.swift */,
+				5801C0A5248639AB00DEE48D /* MVCPostsAssembly.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		5801C0AB24863C8300DEE48D /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0B42486441600DEE48D /* MVVMProfilesAssembly.swift */,
+				5801C0C5248649C400DEE48D /* Router */,
+				5801C0B124863D9B00DEE48D /* ViewModel */,
+				5801C0AC24863C8C00DEE48D /* View */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		5801C0AC24863C8C00DEE48D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0AD24863CEC00DEE48D /* MVVMProfiles.storyboard */,
+				5801C0AE24863CEC00DEE48D /* MVVMProfilesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5801C0B124863D9B00DEE48D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0B224863DAB00DEE48D /* MVVMProfilesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5801C0B62486457400DEE48D /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0C0248647EB00DEE48D /* Router */,
+				5801C0B82486458200DEE48D /* ViewModel */,
+				5801C0B72486457D00DEE48D /* View */,
+				5801C0C32486490D00DEE48D /* MVVMEditProfileAssembly.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		5801C0B72486457D00DEE48D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0BA248645B200DEE48D /* MVVMEditProfile.storyboard */,
+				5801C0B9248645B200DEE48D /* MVVMEditProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5801C0B82486458200DEE48D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0BD248645E300DEE48D /* MVVMEditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5801C0C0248647EB00DEE48D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0C1248647FD00DEE48D /* MVVMEditProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5801C0C5248649C400DEE48D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0D22486502000DEE48D /* MVVMProfilesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5801C0C6248649D400DEE48D /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0CA248649E800DEE48D /* MVVMPostsAssembly.swift */,
+				5801C0C9248649DE00DEE48D /* Router */,
+				5801C0C8248649DB00DEE48D /* ViewModel */,
+				5801C0C7248649D800DEE48D /* View */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		5801C0C7248649D800DEE48D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0CC24864A1400DEE48D /* MVVMPosts.storyboard */,
+				5801C0CD24864A1400DEE48D /* MVVMPostsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5801C0C8248649DB00DEE48D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0D024864C3000DEE48D /* MVVMPostsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5801C0C9248649DE00DEE48D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		58A2CD982480DFC300C28B23 = {
+			isa = PBXGroup;
+			children = (
+				58A2CDA32480DFC300C28B23 /* DesignPatterns */,
+				58A2CDA22480DFC300C28B23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58A2CDA22480DFC300C28B23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58A2CDA12480DFC300C28B23 /* DesignPatterns.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58A2CDA32480DFC300C28B23 /* DesignPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				5801C06F2486179C00DEE48D /* DisplayItems */,
+				58A2CDBC2480E7D600C28B23 /* Model */,
+				58A2CDBA2480E12400C28B23 /* VIPER */,
+				58A2CDB92480E11800C28B23 /* MVVM */,
+				58A2CDB82480E10800C28B23 /* MVC */,
+				58A2CDA42480DFC300C28B23 /* AppDelegate.swift */,
+				58A2CDA82480DFC300C28B23 /* ViewController.swift */,
+				58A2CDAA2480DFC300C28B23 /* Main.storyboard */,
+				58A2CDAD2480DFC400C28B23 /* Assets.xcassets */,
+				58A2CDAF2480DFC400C28B23 /* LaunchScreen.storyboard */,
+				58A2CDB22480DFC400C28B23 /* Info.plist */,
+			);
+			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		58A2CDB82480E10800C28B23 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0A42486397900DEE48D /* Posts */,
+				5801C09D248637AF00DEE48D /* EditProfile */,
+				5801C0952486344500DEE48D /* Profiles */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		58A2CDB92480E11800C28B23 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				5801C0C6248649D400DEE48D /* Posts */,
+				5801C0B62486457400DEE48D /* EditProfile */,
+				5801C0AB24863C8300DEE48D /* Profiles */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		58A2CDBA2480E12400C28B23 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				5801C067248615C700DEE48D /* Posts */,
+				5801C066248615BD00DEE48D /* EditProfile */,
+				5801C0652486159700DEE48D /* Profiles */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		58A2CDBC2480E7D600C28B23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58A2CDCA2480FBA900C28B23 /* ServiceLocator.swift */,
+				58A2CDBE2480E80400C28B23 /* Services */,
+				58A2CDBD2480E7FF00C28B23 /* Entities */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58A2CDBD2480E7FF00C28B23 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				58A2CDBF2480E83800C28B23 /* PostEntity.swift */,
+				58A2CDC12480E89700C28B23 /* UserEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		58A2CDBE2480E80400C28B23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				58A2CDC42480E98B00C28B23 /* UserService.swift */,
+				58A2CDC62480E9EB00C28B23 /* PostService.swift */,
+				58A2CDC82480EB9A00C28B23 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58A2CDA02480DFC300C28B23 /* DesignPatterns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58A2CDB52480DFC400C28B23 /* Build configuration list for PBXNativeTarget "DesignPatterns" */;
+			buildPhases = (
+				58A2CD9D2480DFC300C28B23 /* Sources */,
+				58A2CD9E2480DFC300C28B23 /* Frameworks */,
+				58A2CD9F2480DFC300C28B23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesignPatterns;
+			productName = DesignPatterns;
+			productReference = 58A2CDA12480DFC300C28B23 /* DesignPatterns.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58A2CD992480DFC300C28B23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Daniel;
+				TargetAttributes = {
+					58A2CDA02480DFC300C28B23 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 58A2CD9C2480DFC300C28B23 /* Build configuration list for PBXProject "DesignPatterns" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58A2CD982480DFC300C28B23;
+			productRefGroup = 58A2CDA22480DFC300C28B23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58A2CDA02480DFC300C28B23 /* DesignPatterns */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58A2CD9F2480DFC300C28B23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5801C0BC248645B200DEE48D /* MVVMEditProfile.storyboard in Resources */,
+				5891D28424868AD500BBBA47 /* VIPEREditProfileV2.storyboard in Resources */,
+				58A2CDB12480DFC400C28B23 /* LaunchScreen.storyboard in Resources */,
+				5801C0CE24864A1400DEE48D /* MVVMPosts.storyboard in Resources */,
+				5801C08224861E2300DEE48D /* VIPEREditProfile.storyboard in Resources */,
+				5801C06A248615F100DEE48D /* VIPERProfiles.storyboard in Resources */,
+				5801C0902486248500DEE48D /* VIPERPosts.storyboard in Resources */,
+				5801C0AF24863CEC00DEE48D /* MVVMProfiles.storyboard in Resources */,
+				58A2CDAE2480DFC400C28B23 /* Assets.xcassets in Resources */,
+				5801C0A22486381100DEE48D /* MVCEditProfile.storyboard in Resources */,
+				5801C0AA248639FE00DEE48D /* MVCPosts.storyboard in Resources */,
+				58A2CDAC2480DFC300C28B23 /* Main.storyboard in Resources */,
+				5801C0992486347D00DEE48D /* MVCProfiles.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58A2CD9D2480DFC300C28B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5801C09F248637C000DEE48D /* MVCEditProfileAssembly.swift in Sources */,
+				5801C0B024863CEC00DEE48D /* MVVMProfilesViewController.swift in Sources */,
+				5801C0922486272000DEE48D /* PostDisplayItem.swift in Sources */,
+				5801C0C2248647FD00DEE48D /* MVVMEditProfileRouter.swift in Sources */,
+				58A2CDA92480DFC300C28B23 /* ViewController.swift in Sources */,
+				5801C06E2486171200DEE48D /* ViperProfilesViewIO.swift in Sources */,
+				5801C0C42486490D00DEE48D /* MVVMEditProfileAssembly.swift in Sources */,
+				5801C07D24861DFE00DEE48D /* VIPEREditProfileAssembly.swift in Sources */,
+				5801C07824861AC300DEE48D /* VIPERProfilesRouter.swift in Sources */,
+				58A2CDC72480E9EB00C28B23 /* PostService.swift in Sources */,
+				58A2CDC52480E98B00C28B23 /* UserService.swift in Sources */,
+				58A2CDC02480E83800C28B23 /* PostEntity.swift in Sources */,
+				5801C0D32486502000DEE48D /* MVVMProfilesRouter.swift in Sources */,
+				5801C0BB248645B200DEE48D /* MVVMEditProfileViewController.swift in Sources */,
+				58A2CDCB2480FBA900C28B23 /* ServiceLocator.swift in Sources */,
+				5801C0CF24864A1400DEE48D /* MVVMPostsViewController.swift in Sources */,
+				5801C09A2486347D00DEE48D /* MVCProfilesViewController.swift in Sources */,
+				58A2CDA52480DFC300C28B23 /* AppDelegate.swift in Sources */,
+				5801C071248617A700DEE48D /* UserDisplayItem.swift in Sources */,
+				5801C0CB248649E800DEE48D /* MVVMPostsAssembly.swift in Sources */,
+				58A2CDC22480E89700C28B23 /* UserEntity.swift in Sources */,
+				5801C08E248623D900DEE48D /* VIPERPostsViewController.swift in Sources */,
+				5891D28624868B8500BBBA47 /* VIPEREditProfile2ViewController.swift in Sources */,
+				5801C0B324863DAB00DEE48D /* MVVMProfilesViewModel.swift in Sources */,
+				5801C086248620BF00DEE48D /* VIPEREditProfilePresenter.swift in Sources */,
+				5801C08424861F7F00DEE48D /* VIPEREditProfileViewController.swift in Sources */,
+				5801C0A6248639AB00DEE48D /* MVCPostsAssembly.swift in Sources */,
+				5801C075248618C700DEE48D /* VIPERProfilesPresenter.swift in Sources */,
+				5801C08A2486239F00DEE48D /* VIPERPostsAssembly.swift in Sources */,
+				5801C09C2486368400DEE48D /* MVCProfilesAssembly.swift in Sources */,
+				5801C0D124864C3000DEE48D /* MVVMPostsViewModel.swift in Sources */,
+				5801C0A9248639FE00DEE48D /* MVCPostsViewController.swift in Sources */,
+				58A2CDC92480EB9A00C28B23 /* StorageService.swift in Sources */,
+				5801C0882486213100DEE48D /* VIPEREditProfileRouter.swift in Sources */,
+				5801C07B24861BC700DEE48D /* VIPERProfilesAssembly.swift in Sources */,
+				5801C06C248615FE00DEE48D /* VIPERProfilesViewController.swift in Sources */,
+				5801C0942486294500DEE48D /* VIPERPostsPresenter.swift in Sources */,
+				5801C0BE248645E300DEE48D /* MVVMEditProfileViewModel.swift in Sources */,
+				5801C0A32486381100DEE48D /* MVCEditProfileViewController.swift in Sources */,
+				5801C0B52486441700DEE48D /* MVVMProfilesAssembly.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58A2CDAA2480DFC300C28B23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58A2CDAB2480DFC300C28B23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58A2CDAF2480DFC400C28B23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58A2CDB02480DFC400C28B23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58A2CDB32480DFC400C28B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58A2CDB42480DFC400C28B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58A2CDB62480DFC400C28B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DesignPatterns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.DesignPatterns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58A2CDB72480DFC400C28B23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DesignPatterns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.DesignPatterns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58A2CD9C2480DFC300C28B23 /* Build configuration list for PBXProject "DesignPatterns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A2CDB32480DFC400C28B23 /* Debug */,
+				58A2CDB42480DFC400C28B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58A2CDB52480DFC400C28B23 /* Build configuration list for PBXNativeTarget "DesignPatterns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A2CDB62480DFC400C28B23 /* Debug */,
+				58A2CDB72480DFC400C28B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58A2CD992480DFC300C28B23 /* Project object */;
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Am5-C2-lop">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Profile2 View Controller-->
+        <scene sceneID="BuQ-Kh-KaZ">
+            <objects>
+                <viewController id="Am5-C2-lop" customClass="VIPEREditProfile2ViewController" customModule="DesignPatterns" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pya-fw-BXU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7po-oU-nwn">
+                                <rect key="frame" x="132" y="362" width="150" height="172"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zU2-ml-qxp">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="7Hb-oW-Z60"/>
+                                            <constraint firstAttribute="width" constant="150" id="Tnn-iR-Xlz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdR-ch-gxj">
+                                        <rect key="frame" x="0.0" y="64" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="a3B-46-hpt"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.99199599027633667" green="0.97557085752487183" blue="0.97623533010482788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Добавить"/>
+                                        <connections>
+                                            <action selector="didTapAddButton:" destination="Am5-C2-lop" eventType="touchUpInside" id="RH2-l5-HpD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSv-C7-GOy">
+                                        <rect key="frame" x="0.0" y="122" width="150" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0r0-Aq-i58"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.27946704630000002" blue="0.38451421260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title=" Закрыть"/>
+                                        <connections>
+                                            <action selector="didTapCloseButton:" destination="Am5-C2-lop" eventType="touchUpInside" id="hP5-uP-bd4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7po-oU-nwn" firstAttribute="centerY" secondItem="pya-fw-BXU" secondAttribute="centerY" id="MBr-bX-IIg"/>
+                            <constraint firstItem="7po-oU-nwn" firstAttribute="centerX" secondItem="pya-fw-BXU" secondAttribute="centerX" id="xYs-2u-afX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TvI-Gw-3S2"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="zU2-ml-qxp" id="XxH-Ff-ZK0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dku-7A-xva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="171"/>
+        </scene>
+    </scenes>
+</document>

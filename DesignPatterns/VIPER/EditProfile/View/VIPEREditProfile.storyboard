@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sCc-XP-JSP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="6Js-eV-1h3">
+            <objects>
+                <viewController id="sCc-XP-JSP" customClass="VIPEREditProfileViewController" customModule="DesignPatterns" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z4Z-3m-Rq0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1U-Jt-Zs4">
+                                <rect key="frame" x="73.5" y="400" width="267" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bba-pM-e8r">
+                                        <rect key="frame" x="8" y="8" width="43" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pej-MZ-nJl">
+                                        <rect key="frame" x="59" y="2" width="200" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="aiR-vy-jyG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bJ-vW-l08">
+                                        <rect key="frame" x="9" y="44" width="250" height="44"/>
+                                        <color key="backgroundColor" red="0.99199599027633667" green="0.97557085752487183" blue="0.97623533010482788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="MKE-78-Cx7"/>
+                                        </constraints>
+                                        <state key="normal" title="Добавить"/>
+                                        <connections>
+                                            <action selector="didTapMainButton:" destination="sCc-XP-JSP" eventType="touchUpInside" id="RgG-Ar-KGX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8bJ-vW-l08" secondAttribute="trailing" constant="8" id="07h-HB-buE"/>
+                                    <constraint firstAttribute="trailing" secondItem="pej-MZ-nJl" secondAttribute="trailing" constant="8" id="GIQ-ts-Dpi"/>
+                                    <constraint firstItem="pej-MZ-nJl" firstAttribute="leading" secondItem="Bba-pM-e8r" secondAttribute="trailing" constant="8" id="Mr4-sT-TKk"/>
+                                    <constraint firstItem="8bJ-vW-l08" firstAttribute="leading" secondItem="I1U-Jt-Zs4" secondAttribute="leading" constant="9" id="VMd-Yh-c90"/>
+                                    <constraint firstAttribute="bottom" secondItem="8bJ-vW-l08" secondAttribute="bottom" constant="8" id="Wmh-FP-bbL"/>
+                                    <constraint firstItem="pej-MZ-nJl" firstAttribute="top" secondItem="I1U-Jt-Zs4" secondAttribute="top" constant="2" id="YLi-8v-WIc"/>
+                                    <constraint firstItem="Bba-pM-e8r" firstAttribute="leading" secondItem="I1U-Jt-Zs4" secondAttribute="leading" constant="8" id="iLh-Yc-COk"/>
+                                    <constraint firstItem="8bJ-vW-l08" firstAttribute="top" secondItem="pej-MZ-nJl" secondAttribute="bottom" constant="8" id="iNr-WE-MTy"/>
+                                    <constraint firstItem="Bba-pM-e8r" firstAttribute="top" secondItem="I1U-Jt-Zs4" secondAttribute="top" constant="8" id="p7V-lC-JCn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="I1U-Jt-Zs4" firstAttribute="centerX" secondItem="z4Z-3m-Rq0" secondAttribute="centerX" id="Ale-bx-kf7"/>
+                            <constraint firstItem="I1U-Jt-Zs4" firstAttribute="centerY" secondItem="z4Z-3m-Rq0" secondAttribute="centerY" id="u0r-Df-dNh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dmj-YE-mnd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Htu-Zk-pdU">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="cancel" id="r2y-Ax-zL6">
+                            <color key="tintColor" red="1" green="0.27946704630000002" blue="0.38451421260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="didTapCloseButton:" destination="sCc-XP-JSP" id="adt-f3-5rz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="pej-MZ-nJl" id="CYS-Le-rxK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdz-30-u2V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073.913043478261" y="-159.375"/>
+        </scene>
+    </scenes>
+</document>
